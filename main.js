@@ -53,18 +53,21 @@ fs.readFile('iris.txt','utf8',function(err, data){
 		if(i%1000 == 0)
 			console.log("Training... "+i/100+"% complete. ");
 	}
+
+	// use the network to classify flowers based on testing data
+	fs.readFile('testing_data.txt','utf8',function(err, data){
+		if(err) throw err;
+		console.log("\n\nResults\n===============================\n");
+		var lines = data.split("\n");
+		for(var i = 0; i < lines.length; i++){
+			var input = lines[i].trim().split(",");
+			var result = getFlowerName(network.activate(input));
+			console.log(lines[i].trim()+" => "+result);
+		}
+	});
 });
 
-fs.readFile('testing_data.txt','utf8',function(err, data){
-	if(err) throw err;
-	console.log("\n\nResults\n======================================\n");
-	var lines = data.split("\n");
-	for(var i = 0; i < lines.length; i++){
-		var input = lines[i].trim().split(",");
-		var result = getFlowerName(network.activate(input));
-		console.log(lines[i].trim()+" => "+result);
-	}
-});
+// helper functions
 function getLargestIndex(arr){
 	var result = 0;
 	for(var i = 1; i < arr.length; i++)
