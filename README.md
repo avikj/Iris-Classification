@@ -1,5 +1,5 @@
 # Iris Classification
-UsING the [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) to predict whether a flower is an Iris setosa, Iris versicolor, or Iris virginica based on its sepal and petal lengths and widths. This is my submission for MVCS Club's competition for February 2016.
+Using the [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) to predict whether a flower is an Iris setosa, Iris versicolor, or Iris virginica based on its sepal and petal lengths and widths. This is my submission for MVCS Club's competition for February 2016.
 
 ## Testing
 1. Clone the repo onto your computer and move into the directory.
