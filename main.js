@@ -1,8 +1,7 @@
 var synaptic = require('synaptic');
 var fs = require('fs');
 var Layer = synaptic.Layer,
-    Network = synaptic.Network,
-    Trainer = synaptic.Trainer;
+    Network = synaptic.Network;
 
 
 // set up neural network
