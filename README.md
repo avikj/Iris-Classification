@@ -3,7 +3,9 @@ Using the [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_
 
 ## Testing
 Clone the repo onto your computer and move into the directory.
+
 Move into the Iris-Classification directory.
+
 Install necessary Node modules using npm.
 ```shell
 git clone https://github.com/avikj/Iris-Classification.git
